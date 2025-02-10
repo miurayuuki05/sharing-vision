@@ -4,14 +4,17 @@
 
 ### How to run on local
 
-```cd Frontend```
-```npm install```
-```npm run dev```
-
+```sh
+cd Frontend
+npm install
+npm run dev
+```
 ## Backend
 
 ### How to run on local
 
-```cd Backend```
-```pip install -r requirements.txt```
-```python run.py```
+```sh
+cd Backend
+pip install -r requirements.txt
+python run.py
+```
