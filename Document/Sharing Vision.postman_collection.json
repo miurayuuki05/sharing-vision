@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "890b0c62-56c2-42af-a735-a5a9e4cec72d",
+		"name": "Sharing Vision",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28234197",
+		"_collection_link": "https://cloudy-capsule-251188.postman.co/workspace/cryptocurrency~90350992-ba2f-4346-8421-46ca026dac52/collection/28234197-890b0c62-56c2-42af-a735-a5a9e4cec72d?action=share&source=collection_link&creator=28234197"
+	},
+	"item": [
+		{
+			"name": "All Articles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/article/:limit/:offset",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"article",
+						":limit",
+						":offset"
+					],
+					"variable": [
+						{
+							"key": "limit",
+							"value": "5"
+						},
+						{
+							"key": "offset",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Article",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\" : \"Title Article 2\",\r\n    \"content\" : \"This is but a content of a content of a content of a content of a content of a content\",\r\n    \"category\" : \"Tech\",\r\n    \"status\" : \"publish\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/article",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"article"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Article",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\" : \"Proper Title\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/article/:id",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"article",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Article",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/article/:id",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"article",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Article by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/article/:id",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"article",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
